@@ -1,0 +1,9 @@
+# Ignore the papers-theory folder completely
+papers-theory/
+
+# Ignore all Word files
+*.doc
+*.docx
+
+# Ignore all PDF files
+*.pdf
