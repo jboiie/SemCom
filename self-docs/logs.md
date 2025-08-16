@@ -41,3 +41,17 @@
 ### References Added:
 - NA
 
+---
+**Date:** 2025-08-16
+
+### Tasks Done: 
+-Created a sample dataset, collecting 20 basic sentences that can be used.
+
+### Decisions Taken:
+-decided to start working on the dataset for encoding and decoding
+
+### Problems Faced:
+-not enough datasets online, might have to create one of my own
+
+### Next Steps:
+-solve and create a good enough dataset for my first model.
