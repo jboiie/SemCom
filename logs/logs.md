@@ -60,7 +60,7 @@
 **Date:** 2025-08-17
 
 ### Tasks Done:
--Created an organized folder structure
+-Created an organized folder structure \n
 -started to find out about NLP and what goes on w it
 
 ### Decisions Taken:
