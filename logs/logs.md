@@ -55,3 +55,24 @@
 
 ### Next Steps:
 -solve and create a good enough dataset for my first model.
+
+---
+**Date:** 2025-08-17
+
+### Tasks Done:
+-Created an organized folder structure
+-started to find out about NLP and what goes on w it
+
+### Decisions Taken:
+-starting to learn about NLP and HF transformer in a little bit more detail before starting with the build
+-will take two days for this to actually start building my project.
+
+### Problems Faced:
+-overwhelmed.
+
+### Next Steps:
+-just keep movin'
+
+### References Added:
+-NA
+---
