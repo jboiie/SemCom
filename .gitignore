@@ -1,5 +1,5 @@
 # Ignore the papers-theory folder completely
-papers-theory/
+docs/papers-theory/
 
 # Ignore all Word files
 *.doc
