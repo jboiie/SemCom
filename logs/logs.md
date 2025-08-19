@@ -76,3 +76,20 @@
 ### References Added:
 -NA
 ---
+**Date:** 2025-08-19
+
+### Tasks Done:
+- researched about how to do research (was also busy with class tests)
+
+### Decisions Taken:
+- planning the project execution now
+
+### Problems Faced:
+- lack of consistency
+
+### Next Steps:
+- CONSISTENCY
+
+### References Added:
+- NA
+---
