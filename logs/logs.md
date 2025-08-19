@@ -45,36 +45,36 @@
 **Date:** 2025-08-16
 
 ### Tasks Done: 
--Created a sample dataset, collecting 20 basic sentences that can be used.
+- Created a sample dataset, collecting 20 basic sentences that can be used.
 
 ### Decisions Taken:
--decided to start working on the dataset for encoding and decoding
+- decided to start working on the dataset for encoding and decoding
 
 ### Problems Faced:
--not enough datasets online, might have to create one of my own
+- not enough datasets online, might have to create one of my own
 
 ### Next Steps:
--solve and create a good enough dataset for my first model.
+- solve and create a good enough dataset for my first model.
 
 ---
 **Date:** 2025-08-17
 
 ### Tasks Done:
--Created an organized folder structure
--started to find out about NLP and what goes on w it
+- Created an organized folder structure 
+- started to find out about NLP and what goes on w it
 
 ### Decisions Taken:
--starting to learn about NLP and HF transformer in a little bit more detail before starting with the build
--will take two days for this to actually start building my project.
+- starting to learn about NLP and HF transformer in a little bit more detail before starting with the build
+- will take two days for this to actually start building my project.
 
 ### Problems Faced:
--overwhelmed.
+- overwhelmed.
 
 ### Next Steps:
--just keep movin'
+- just keep movin'
 
 ### References Added:
--NA
+- NA
 ---
 **Date:** 2025-08-19
 
