@@ -93,3 +93,20 @@
 ### References Added:
 - NA
 ---
+**Date:** 2025-08-20
+
+### Tasks Done:
+- tried all possible models i could on my laptop
+
+### Decisions Taken:
+- shift to google collab
+
+### Problems Faced:
+- model small and not understanding my prompts (220M params)
+
+### Next Steps:
+- will shift to google collab to train on bigger model
+
+### References Added:
+- NA
+---
