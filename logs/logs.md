@@ -110,3 +110,24 @@
 ### References Added:
 - NA
 ---
+**Date:** 2025-08-21
+
+### Tasks Done:
+- met prof today for weekly debrief
+
+### Decisions Taken:
+- to start working on transformers and learning about them properly
+- to improve the dataset
+- to get more datasets
+- to get started with decoder also
+
+### Problems Faced:
+- none actually
+
+### Next Steps:
+- learrrnnn
+
+### References Added:
+- 3blue1brown yt channel
+- vizuara yt channel for transformers
+---
