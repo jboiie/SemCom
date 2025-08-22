@@ -131,3 +131,21 @@
 - 3blue1brown yt channel
 - vizuara yt channel for transformers
 ---
+
+**Date:** 2025-08-22
+
+### Tasks Done:
+-
+
+### Decisions Taken:
+-
+
+### Problems Faced:
+-
+
+### Next Steps:
+-
+
+### References Added:
+-
+---
