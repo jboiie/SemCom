@@ -135,17 +135,17 @@
 **Date:** 2025-08-22
 
 ### Tasks Done:
--
+- started watching lectures on LLM and transformers 
 
 ### Decisions Taken:
--
+- NA
 
 ### Problems Faced:
--
+- NA
 
 ### Next Steps:
--
+- keep learning
 
 ### References Added:
--
+- NA
 ---
