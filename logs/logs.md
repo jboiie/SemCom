@@ -149,3 +149,20 @@
 ### References Added:
 - NA
 ---
+**Date:** 2025-08-24
+
+### Tasks Done:
+- worked on making the transformer better 
+
+### Decisions Taken:
+- taking BERT model instead of T5.
+
+### Problems Faced:
+- NA
+
+### Next Steps:
+- collect a suitable dataset and go for finetuning
+
+### References Added:
+- NA
+---
