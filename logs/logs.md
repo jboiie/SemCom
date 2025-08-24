@@ -166,3 +166,21 @@
 ### References Added:
 - NA
 ---
+
+**Date:** 2025-08-24(2)
+
+### Tasks Done:
+- tried bert and got expected outputs
+
+### Decisions Taken:
+- will use this output to switch back to flan t5
+
+### Problems Faced:
+- the switching part is difficult
+
+### Next Steps:
+- try
+
+### References Added:
+- NA
+---
