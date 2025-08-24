@@ -1,4 +1,4 @@
-seed_data = [
+[
     {"text": "Paris is the capital of France.", "triples": "Paris|is capital of|France"},
     {"text": "Albert Einstein developed the theory of relativity.", "triples": "Albert Einstein|developed|theory of relativity"},
     {"text": "The Moon revolves around the Earth.", "triples": "Moon|revolves around|Earth"},
