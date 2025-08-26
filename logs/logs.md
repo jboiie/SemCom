@@ -184,3 +184,21 @@
 ### References Added:
 - NA
 ---
+
+**Date:** 2025-08-26
+
+### Tasks Done:
+- converted my dataset into a hugging face dataset 
+
+### Decisions Taken:
+- moving towards tokenization of my dataset to train the flan t5 model
+
+### Problems Faced:
+- none yet
+
+### Next Steps:
+- train the model
+
+### References Added:
+- NA
+---
