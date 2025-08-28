@@ -7,3 +7,6 @@ docs/papers-theory/
 
 # Ignore all PDF files
 *.pdf
+model_extraction/trained/flan-t5-triple-extraction-final/
+
+flan-t5-triple-extraction-final.zip
