@@ -202,3 +202,20 @@
 ### References Added:
 - NA
 ---
+**Date:** 2025-08-28
+
+### Tasks Done:
+- trained the model with my dataset
+
+### Decisions Taken:
+- saved the model.
+
+### Problems Faced:
+- NA
+
+### Next Steps:
+- test and move to decoder
+
+### References Added:
+- NA
+---
