@@ -219,3 +219,20 @@
 ### References Added:
 - NA
 ---
+**Date:** 2025-08-31
+
+### Tasks Done:
+- still learning about LLMs thru vizuara.
+
+### Decisions Taken:
+- want to start a github repo to track my lecture progress 
+
+### Problems Faced:
+- college academic involvements
+
+### Next Steps:
+- push harder
+
+### References Added:
+- NA
+---
