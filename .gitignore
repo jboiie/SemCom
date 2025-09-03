@@ -10,3 +10,7 @@ docs/papers-theory/
 model_extraction/trained/flan-t5-triple-extraction-final/
 
 flan-t5-triple-extraction-final.zip
+
+model_extraction/trained/flan-t5-triple-extraction-model-trained/
+
+flan-t5-triple-extraction-model-trained.zip
