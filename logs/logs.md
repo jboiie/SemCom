@@ -245,7 +245,7 @@
 - keep trying untill i reach desired outcomes
 
 ### Problems Faced:
-- its difficult bro
+- MODELS ARE LEARNING HOW TO PARAPHRASE INSTEAD OF GIVING TRIPLETS
 
 ### Next Steps:
 - keep tryin
