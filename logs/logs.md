@@ -236,3 +236,20 @@
 ### References Added:
 - NA
 ---
+**Date:** 2025-09-03
+
+### Tasks Done:
+- tried training the model with different parameteres to get the desired output
+
+### Decisions Taken:
+- keep trying untill i reach desired outcomes
+
+### Problems Faced:
+- its difficult bro
+
+### Next Steps:
+- keep tryin
+
+### References Added:
+- NA
+---
