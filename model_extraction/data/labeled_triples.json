@@ -33,7 +33,7 @@
     {"text": "The Golden Gate Bridge is located in San Francisco.", "triples": "Golden Gate Bridge|is located in|San Francisco"},
     {"text": "The Amazon rainforest is the largest tropical rainforest.", "triples": "Amazon rainforest|is largest tropical rainforest|"},
     {"text": "The battery life of this phone is 24 hours.", "triples": "Battery life of phone|is|24 hours"},
-    {"text": "Barack Obama was the 44th president of the United States.", "triples": "Barack Obama|was|44th president of United States"},
+    {"text": "Barack Obama was the 44th president of the United States.", "triples": "Barack Obama|was|44th president of USA"},
     {"text": "The Great Barrier Reef is off the coast of Australia.", "triples": "Great Barrier Reef|is off the coast of|Australia"},
     {"text": "J.K. Rowling wrote the Harry Potter series.", "triples": "J.K. Rowling|wrote|Harry Potter series"},
     {"text": "Silver is a precious metal.", "triples": "Silver|is|precious metal"},
