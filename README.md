@@ -106,56 +106,7 @@ SEMANTIC COMMS/
 - **Training Data:** Need triples-to-text datasets  
 - **Model Selection:** Choose appropriate model for text generation from triples  
 - **Integration:** Connect encoder-decoder pipeline  
-
 ---
-
-## Technical Stack & Tools
-
-### Current Implementation
-- **Framework:** Hugging Face Transformers  
-- **Base Model:** `google/flan-t5-large`  
-- **Training:** `Seq2SeqTrainer` with `DataCollatorForSeq2Seq`  
-- **Environment:** Google Colab → Local Windows laptop  
-- **Language:** Python  
-- **Version Control:** GitHub  
-
-### Training Configuration
-```python
-training_args = Seq2SeqTrainingArguments(
-    output_dir="./flan_t5_results",
-    eval_steps=500,
-    learning_rate=3e-5,
-    per_device_train_batch_size=8,
-    per_device_eval_batch_size=8,
-    weight_decay=0.01,
-    save_total_limit=3,
-    num_train_epochs=5,
-    predict_with_generate=True,
-    logging_dir='./logs',
-    logging_steps=10,
-    save_strategy="epoch",
-    report_to=["none"]
-)
-```
-
----
-
-## GitHub Repository Status
-
-### Current State
-- **Training notebook:** ✅ Uploaded (metadata rendering issues on GitHub)  
-- **Model files:** ❌ Excluded via `.gitignore` (too large for Git)  
-- **Scripts:** ✅ Available locally  
-- **Documentation:** 🔧 Needs completion  
-
-### Repository Structure
-- `src/encoding/` → Encoder components (current work)  
-- `src/decoding/` → Decoder components (future work)  
-- `src/extraction/` → Entity extraction utilities  
-- `model_extraction/` → Current encoder model and training  
-
----
-
 ## Current Critical Issues
 
 ### 🚨 Encoder Model Performance
@@ -202,24 +153,6 @@ training_args = Seq2SeqTrainingArguments(
 - **Deployment:** Production-ready semantic communication system  
 
 ---
-
-## Key File Locations
-
-### Current Encoder Files
-- **Training Data:** `model_extraction/data/labeled_triples.json`  
-- **Trained Model:** `model_extraction/trained/flan-t5-triple-extraction-final/`  
-- **Inference Script:** `model_extraction/scripts/run_inference.py`  
-- **Training Notebook:** On GitHub (with rendering issues)  
-
-### Planned Decoder Files
-- **Architecture:** `src/decoding/` (to be created)  
-- **Training Data:** TBD  
-- **Models:** TBD  
-
----
-
-## System Requirements
-
 ### Development Environment
 ```
 transformers>=4.0
@@ -233,3 +166,4 @@ pandas
 - **Training:** Google Colab (free tier)  
 - **Development:** Local Windows laptop  
 - **Inference:** CPU/GPU automatic detection  
+
