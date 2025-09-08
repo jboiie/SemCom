@@ -253,3 +253,21 @@
 ### References Added:
 - NA
 ---
+
+**Date:** 2025-09-08
+
+### Tasks Done:
+- will now try stricter output formats- rule based processing
+
+### Decisions Taken:
+- using t5 only
+
+### Problems Faced:
+- lesser knowledge(still learning)
+
+### Next Steps:
+- learn about transformers
+
+### References Added:
+- NA
+---
