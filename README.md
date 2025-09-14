@@ -125,7 +125,12 @@ pandas
 ### Hardware
 - **Training:** Google Colab (free tier)  
 - **Development:** Local Windows laptop  
-- **Inference:** CPU/GPU automatic detection  
+- **Inference:** CPU/GPU automatic detection
+
+## Core References
+- "Attention Is All You Need" (Vaswani et al., 2017) - The foundational Transformer architecture that enables semantic understanding through self-attention mechanisms
+- "Semantic Communications: Overview, Open Issues, and Future Research Directions" - Comprehensive survey of semantic communication paradigms and challenges
+- "Less Data, More Knowledge: Building Next-Generation Semantic Communication Networks" (Chaccour et al., 2022) - Vision for scalable end-to-end semantic networks founded on AI and causal reasoning
 
 
 
