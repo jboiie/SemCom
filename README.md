@@ -74,85 +74,44 @@ SEMANTIC COMMS/
 - **Status:** ❌ Not started yet  
 
 **Integration Goal:**  
-- Encoder compresses sentences → triples (bandwidth efficient)  
-- Decoder reconstructs triples → sentences (information recovery)  
+```
+[USER INPUT]
+"Einstein developed the theory of relativity"
+        ↓
+[TRIPLE EXTRACTION] ← Your current work
+"Einstein|developed|theory of relativity"
+        ↓
+[SEMANTIC EMBEDDING] ← Next stage
+[0.23, -0.45, 0.78, ..., 0.12] (128-dim vector)
+        ↓
+[VECTOR QUANTIZATION] ← Compression stage
+[23, 156, 78, 12] (4 indices instead of 128 floats)
+        ↓
+[CHANNEL CODING] ← Error protection
+[23, 156, 78, 12, 45, 67] (6 bits with redundancy)
+        ↓
+[TRANSMISSION] ← Over wireless channel
+Radio waves/5G/WiFi
+        ↓
+[CHANNEL DECODING] ← Error correction
+[23, 156, 78, 12] (recovered indices)
+        ↓
+[VECTOR DEQUANTIZATION] ← Decompression
+[0.23, -0.45, 0.78, ..., 0.12] (restored vector)
+        ↓
+[SEMANTIC DECODING] ← Text reconstruction
+"Einstein|developed|theory of relativity"
+        ↓
+[TRIPLE-TO-TEXT] ← Natural language generation
+"Einstein developed the theory of relativity"
+        ↓
+[USER DISPLAY]
+Received message
 
----
+```
 
-## Current Progress Status
 
-### ✅ ENCODER Stage - Completed
-- **Dataset Preparation:** Created `labeled_triples.json` with sentence-to-triple mappings  
-- **Environment Setup:** Google Colab with transformers library  
-- **Model Selection:** `google/flan-t5-large` for sequence-to-sequence learning  
-- **Data Preprocessing:** Tokenized dataset with proper input/label formatting  
-- **Training Configuration:** `Seq2SeqTrainingArguments` setup  
-- **Model Training:** Successfully completed fine-tuning (5 epochs, ~24 minutes)  
-- **Model Saving:** Downloaded to local laptop  
-- **Inference Setup:** Created `run_inference.py` script  
 
-### 🔧 ENCODER Stage - Issues
-- **Critical Problem:** Model outputs input repetition instead of structured triples  
-  - Input: `"this table is green"`  
-  - Expected: `"table|has color|green"`  
-  - Actual: `"this table is green"`  
-- **Likely Causes:**
-  - Training data may have sentences in both text and triples fields  
-  - Preprocessing function mapping errors  
-  - Label formatting issues during tokenization  
-
-### ❌ DECODER Stage - Not Started
-- **Architecture Design:** Need to define decoder model approach  
-- **Training Data:** Need triples-to-text datasets  
-- **Model Selection:** Choose appropriate model for text generation from triples  
-- **Integration:** Connect encoder-decoder pipeline  
----
-## Current Critical Issues
-
-### 🚨 Encoder Model Performance
-- **Problem:** Fine-tuned model repeating input instead of extracting triples  
-- **Likely Causes:**  
-  - Training data issues  
-  - Preprocessing/label formatting errors  
-
-### 🔧 Technical Challenges
-- **Generation Parameters:** Flan-T5 doesn’t support sampling flags (`top_p`, `top_k`)  
-- **Data Validation:** Need to verify training data quality  
-- **Evaluation Metrics:** No automated assessment of triple extraction quality  
-
----
-
-## Immediate Next Steps (Encoder Focus)
-
-### Priority 1 - Fix Current Model
-- 🔍 Inspect Training Data: Verify `labeled_triples.json` format  
-- 🔧 Data Correction: Fix malformed triples  
-- 🔄 Retrain Model: If data issues found  
-- 🧪 Validation: Test with known good inputs  
-
-### Priority 2 - Encoder Completion
-- 📊 Evaluation Pipeline: Implement triple extraction metrics  
-- 📝 Documentation: Complete encoder usage guide  
-- 🔧 Optimization: Fine-tune generation parameters  
-- 🧪 Testing: Comprehensive evaluation suite  
-
----
-
-## Future Roadmap (Decoder Development)
-
-### Stage 2 Planning
-- **Architecture Research:** Survey triple-to-text generation approaches  
-- **Data Preparation:** Create/find triples-to-sentence datasets  
-- **Model Selection:** Choose decoder architecture (T5, GPT variants, etc.)  
-- **Integration Design:** Plan encoder-decoder pipeline  
-
-### System Integration
-- **End-to-End Pipeline:** Connect encoder → decoder  
-- **Performance Metrics:** Semantic fidelity, compression ratio  
-- **Optimization:** Joint training or individual component tuning  
-- **Deployment:** Production-ready semantic communication system  
-
----
 ### Development Environment
 ```
 transformers>=4.0
@@ -166,4 +125,5 @@ pandas
 - **Training:** Google Colab (free tier)  
 - **Development:** Local Windows laptop  
 - **Inference:** CPU/GPU automatic detection  
+
 
