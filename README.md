@@ -7,8 +7,41 @@ The system aims to compress natural language into semantic representations (trip
 **System Architecture Overview:**
 
 ```
-INPUT TEXT → [ENCODER: Triple Extraction] → SEMANTIC TRIPLES → [DECODER: Text Reconstruction] → OUTPUT TEXT
+[USER INPUT]
+"Einstein developed the theory of relativity"
+        ↓
+[TRIPLE EXTRACTION] ← Your current work
+"Einstein|developed|theory of relativity"
+        ↓
+[SEMANTIC EMBEDDING] ← Next stage
+[0.23, -0.45, 0.78, ..., 0.12] (128-dim vector)
+        ↓
+[VECTOR QUANTIZATION] ← Compression stage
+[23, 156, 78, 12] (4 indices instead of 128 floats)
+        ↓
+[CHANNEL CODING] ← Error protection
+[23, 156, 78, 12, 45, 67] (6 bits with redundancy)
+        ↓
+[TRANSMISSION] ← Over wireless channel
+Radio waves/5G/WiFi
+        ↓
+[CHANNEL DECODING] ← Error correction
+[23, 156, 78, 12] (recovered indices)
+        ↓
+[VECTOR DEQUANTIZATION] ← Decompression
+[0.23, -0.45, 0.78, ..., 0.12] (restored vector)
+        ↓
+[SEMANTIC DECODING] ← Text reconstruction
+"Einstein|developed|theory of relativity"
+        ↓
+[TRIPLE-TO-TEXT] ← Natural language generation
+"Einstein developed the theory of relativity"
+        ↓
+[USER DISPLAY]
+Received message
+
 ```
+
 
 - **Current Focus:** Working on the **ENCODER** part (triple extraction stage) to convert natural language sentences into structured semantic triples.
 
@@ -73,44 +106,6 @@ SEMANTIC COMMS/
 - **Output:** Natural language sentences  
 - **Status:** ❌ Not started yet  
 
-**Integration Goal:**  
-```
-[USER INPUT]
-"Einstein developed the theory of relativity"
-        ↓
-[TRIPLE EXTRACTION] ← Your current work
-"Einstein|developed|theory of relativity"
-        ↓
-[SEMANTIC EMBEDDING] ← Next stage
-[0.23, -0.45, 0.78, ..., 0.12] (128-dim vector)
-        ↓
-[VECTOR QUANTIZATION] ← Compression stage
-[23, 156, 78, 12] (4 indices instead of 128 floats)
-        ↓
-[CHANNEL CODING] ← Error protection
-[23, 156, 78, 12, 45, 67] (6 bits with redundancy)
-        ↓
-[TRANSMISSION] ← Over wireless channel
-Radio waves/5G/WiFi
-        ↓
-[CHANNEL DECODING] ← Error correction
-[23, 156, 78, 12] (recovered indices)
-        ↓
-[VECTOR DEQUANTIZATION] ← Decompression
-[0.23, -0.45, 0.78, ..., 0.12] (restored vector)
-        ↓
-[SEMANTIC DECODING] ← Text reconstruction
-"Einstein|developed|theory of relativity"
-        ↓
-[TRIPLE-TO-TEXT] ← Natural language generation
-"Einstein developed the theory of relativity"
-        ↓
-[USER DISPLAY]
-Received message
-
-```
-
-
 
 ### Development Environment
 ```
@@ -125,5 +120,6 @@ pandas
 - **Training:** Google Colab (free tier)  
 - **Development:** Local Windows laptop  
 - **Inference:** CPU/GPU automatic detection  
+
 
 
