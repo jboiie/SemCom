@@ -1,7 +1,7 @@
 # Semantic Communication System (SemCom-Project)
 
 ## Project Vision & End Goal
-You are building a complete **Semantic Communication System** that consists of both encoder and decoder components.  
+building a complete **Semantic Communication System** that consists of both encoder and decoder components.  
 The system aims to compress natural language into semantic representations (triples) for efficient communication, then reconstruct meaningful information at the receiver end.
 
 **Aimed - System Architecture Overview:**
@@ -120,6 +120,7 @@ pandas
 - **Training:** Google Colab (free tier)  
 - **Development:** Local Windows laptop  
 - **Inference:** CPU/GPU automatic detection  
+
 
 
 
