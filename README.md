@@ -4,7 +4,7 @@
 You are building a complete **Semantic Communication System** that consists of both encoder and decoder components.  
 The system aims to compress natural language into semantic representations (triples) for efficient communication, then reconstruct meaningful information at the receiver end.
 
-**System Architecture Overview:**
+**Aimed - System Architecture Overview:**
 
 ```
 [USER INPUT]
@@ -120,6 +120,7 @@ pandas
 - **Training:** Google Colab (free tier)  
 - **Development:** Local Windows laptop  
 - **Inference:** CPU/GPU automatic detection  
+
 
 
 
