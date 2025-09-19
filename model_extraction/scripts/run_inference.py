@@ -1,5 +1,5 @@
 # model_extraction/scripts/run_inference.py
-
+'''
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 import torch
 
