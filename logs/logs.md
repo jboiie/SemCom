@@ -271,3 +271,22 @@
 ### References Added:
 - NA
 ---
+
+**Date:** 2025-09-20
+
+### Tasks Done:
+- neutralized all code
+
+### Decisions Taken:
+- will follow a new approach
+- take wikipedia corpus as my dataset
+- use t5 and spacy to process that and train model
+
+### Problems Faced:
+- NA(am about to start)
+
+### Next Steps:
+- start.
+
+### References Added:
+- navneet nayan sir. 
